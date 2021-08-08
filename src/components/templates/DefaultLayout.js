@@ -1,5 +1,5 @@
-import { Header } from '../atoms/layout/Header'
 import React from 'react'
+import { Header } from '../atoms/layout/Header'
 import { Footer } from '../atoms/layout/Footer'
 
 export const DefaultLayout = (props) => {
