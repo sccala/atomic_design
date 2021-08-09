@@ -4,10 +4,10 @@ import { UserIconWithName } from '../../molecules/users/UserIconWithName'
 
 
 export const UserCard = (props) => {
-  const { user } = props
+  const { user, isAdmin } = props
   return (
     <Card>
-      <UserIconWithName height={160} width={160} image={user.image} name={user.name} />
+      <UserIconWithName height={160} width={160} image={user.image} name={user.name} isAdmin={isAdmin} />
       <SDl>
         <dt>Email</dt>
         <dd>{user.email}</dd>
