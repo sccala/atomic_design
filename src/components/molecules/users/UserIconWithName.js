@@ -1,10 +1,14 @@
+import React, { useContext } from 'react'
 import styled from 'styled-components'
+import { UserContext } from '../../../provider/UserProvider'
 
 export const UserIconWithName = (props) => {
-  const { image, name, isAdmin } = props
+  const { src, name} = props
+  const { userInfo } = useContext(UserContext)
+  const isAdmin = userInfo ? userInfo.isAdmin : false
   return (
     <SContainer>
-      <SImg height={160} width={160} src={image} alt={name} />
+      <SImg height={160} width={160} src={src} alt='profile pics' />
       <SName>{name}</SName>
       {isAdmin && <SEdit>Edit</SEdit>}
     </SContainer>

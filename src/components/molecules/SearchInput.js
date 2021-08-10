@@ -3,6 +3,7 @@ import { PrimaryButton } from '../atoms/button/PrimaryButton'
 import { Input } from '../atoms/input/input'
 
 export const SearchInput = () => {
+  
   return (
     <div>
       <SContainer>

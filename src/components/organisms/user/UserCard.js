@@ -1,13 +1,12 @@
 import styled from 'styled-components'
-import {Card} from '../../atoms/card/Card'
+import { Card } from '../../atoms/card/Card'
 import { UserIconWithName } from '../../molecules/users/UserIconWithName'
 
-
 export const UserCard = (props) => {
-  const { user, isAdmin } = props
+  const { user } = props
   return (
     <Card>
-      <UserIconWithName height={160} width={160} image={user.image} name={user.name} isAdmin={isAdmin} />
+      <UserIconWithName height={160} width={160} src={user.image} name={user.name} />
       <SDl>
         <dt>Email</dt>
         <dd>{user.email}</dd>
